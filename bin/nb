@@ -1,0 +1,11 @@
+#!/bin/bash
+# Run ipython notebook
+
+. ~/Projects/ipython/bin/project
+
+cd $pd
+rbg ipython notebook --pylab inline
+
+wf 'http://127.0.0.1:8888'
+
+

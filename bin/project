@@ -1,0 +1,67 @@
+#!/bin/bash
+# Default project for ipython
+
+# Vars
+export p=$HOME/Projects/ipython
+export ph=markseaman.org
+export pa=$p
+export pb=$p/bin
+export pd=$p/doc
+export pt=$p/test
+
+# Aliases
+alias proot="cd $p && ls -l"
+alias papp="cd $pa"
+alias pbin="cd $pb"
+alias pdoc="cd $pd"
+alias ptest="cd $pt"
+alias eapp="e $pa"
+alias ebin="e $pb"
+alias edoc="e $pd"
+alias etest="e $pt"
+alias tres="tresults"
+alias s='search'
+alias g='grep'
+alias gv='grep -v'
+alias gac='git add -A .; gc'
+alias gas='rmas; pc; git add -A .; reset; git status'
+alias gc='git commit -m '
+alias gco='git checkout'
+alias gd='git diff --color-words --word-diff'
+alias gk='rbg gitk --all'
+alias gm='git merge'
+alias gmv='git mv'
+alias gre='git reset HEAD'
+alias grh='git reset --hard'
+alias grm='git rm'
+alias gs='clear;git status'
+alias pull='git pull'
+alias push='git pull && git push'
+
+# Show the banner
+reset && figlet ipython && cd $p && ls -l
+
+# Path
+export PATH=\
+$pb:\
+$pt:\
+/usr/bin:\
+/sbin:\
+/bin:\
+~/bin:\
+.
+
+# Use virtualenv
+export _OLD_VIRTUAL_PATH=$PATH
+. env/bin/activate
+echo "python = `which python`"
+
+# Directory
+cd $p
+cat $p/bin/welcome
+echo 
+path
+
+# Status
+git status
+

@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# Find defunct processes and kill them
+print "Find defunct processes and kill them"
+
+from util.files import do_command
+
+print do_command('ps -ef|grep -v grep|grep defunct')
