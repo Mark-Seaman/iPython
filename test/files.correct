@@ -1,0 +1,37 @@
+Remove automatically saved files from this directory tree
+Git orig files
+Git libpeerconnection files
+/home/seaman/Projects/ipython/README.md
+
+/home/seaman/Projects/ipython:
+bin
+doc
+env
+README.md
+test
+
+/home/seaman/Projects/ipython/bin:
+elapsed
+kill-defunct
+mkexe
+nb
+project
+w
+welcome
+
+/home/seaman/Projects/ipython/doc:
+50 Tricks.ipynb
+Calculator.ipynb
+Learning iPython Notebook.ipynb
+Markdown Cells.ipynb
+Pipe Data Analyst.ipynb
+Shell Commands.ipynb
+
+/home/seaman/Projects/ipython/env:
+bin
+include
+lib
+local
+
+/home/seaman/Projects/ipython/test:
+files.tst

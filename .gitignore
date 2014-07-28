@@ -1,1 +1,12 @@
+*.diff
+*.gz
+*.like
+*.log
+*.out
+*.pid
+*.pyc
+*.seed
+*.orig
+*~
+
 env
