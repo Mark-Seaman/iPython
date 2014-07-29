@@ -1,0 +1,70 @@
+* Pipe Analyst *                                       -*-muse-*-
+
+**Goal**
+Create a tool for developing the data analysis components need for the pipe scan project.
+
+**Design Requirements**
+
+All files under version control.
+
+High productivity through leverage of open source tools.
+
+Desired Tools
+
+    Operating system
+    * Linux
+    * Python
+    * Virtual Env
+    * Redis
+
+    Application
+    * Node JS
+    * Express/Jade
+    * HTML/CSS/JS
+
+    Number crunching
+    * iPython Notebook
+    * Matplot Lib
+    * Pandas + Numpy
+
+Archictecture
+
+    Socket reader -- gather data from network
+
+    Data pipeline -- real time analysis of data records
+
+        read table
+        scaling
+        cell grouping
+        defect detection
+        build grades
+        write table
+        draw graph of table
+        draw graph of grades
+    
+    App
+        web routes
+        views
+        controls
+        state data
+        pipeline controller
+        recording controller
+        scan data manager
+
+    Functional Tricks
+
+        setup iPython
+        setup Pandas
+        read CSV file
+
+        combine rows (cell grouping) -- every 100 samples
+        combine columns in row (min, max, avg) -- flaw,wall
+
+        scaling of table
+        defect detector
+        pipe cell grading
+
+        wall detectors
+        flaw detectors
+
+        speed detector
