@@ -1,0 +1,11 @@
+files.correct
+files.diff
+files.like
+files.out
+files.tst
+ls.correct
+ls.diff
+ls.like
+ls.out
+ls.tst
+tst.out
